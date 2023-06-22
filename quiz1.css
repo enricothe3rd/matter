@@ -1,0 +1,164 @@
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-decoration: none;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        background-color:#5e6e85;
+        
+    }
+
+    
+     
+/* header */
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color:#003F91;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 10px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+
+
+header a img{
+    background-color: #ffffff;
+    border-radius: .5rem;
+   
+   }
+   
+
+header .navbar ul{
+    list-style: none;
+    
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+    
+}
+
+header .navbar ul li a{
+    font-size: 23px;
+    padding: 20px;
+    color: #fffdfd;
+    display: block;
+  
+}
+
+header .navbar ul li a:hover{
+    background:#a3a7ab;
+    color: #ffffff;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background:#003F91;
+
+    /* dito nagtago */
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+    
+}
+
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li ul li #ul{
+    left: -200px;
+    top: 0px;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+    .top{
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
+    .top h1,.top h2{
+        margin-right: 4rem;
+        margin-left: 4rem;
+        text-transform: capitalize;
+        margin-top: 4rem;
+        font-size: 3.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        }
+
+    .top h2{
+   margin-top: 2rem;
+   font-size: 3rem;
+   margin-bottom: 4rem;
+    }
+   
+    .top .container{
+        border-radius: 1rem;
+        padding-bottom: 4rem;
+        background-color: #ffffff;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        margin-bottom: 2rem;
+        margin-left: 9rem;
+        margin-right: 9rem;
+    }
+    .top .container p{
+        font-size: 1.8rem;
+       padding: 2rem;
+
+    }
+    .top .container .question{
+        background-color:#003F91;
+        color:rgb(228, 228, 228);
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        box-shadow: 3px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    .top .container .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+
+    }
+    .top .container .box .box1 {
+        background-color: white;
+        border: 1px solid black;
+        width: 30% ;
+        border-radius: 2rem;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+
+   
+    .top .container .box .box1 p{
+        font-size: 2rem;
+    }
+
+    .top .container .box  {
+        position: relative;
+    }
+
+    .top .container .box .box1:hover {
+        background-color:gray ;
+        transform: scale(1.1);
+        transition: all;
+        cursor: pointer;
+    }

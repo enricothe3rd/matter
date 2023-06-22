@@ -1,0 +1,292 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+text-decoration: none;
+  }
+
+    body{
+      min-height: 100vh;
+background-image: url(fault.jpg);
+background-repeat: no-repeat;
+background-position: 80% 0;
+background-size: cover;
+    }
+    
+     
+/* header */
+
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background-color:#003F91;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  padding: 10px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  
+}
+
+
+header a img{
+  background-color: #ffffff;
+  border-radius: .5rem;
+ 
+ }
+ 
+
+header .navbar ul{
+  list-style: none;
+  
+}
+
+header .navbar ul li{
+  position: relative;
+  float: left;
+  
+}
+
+header .navbar ul li a{
+  font-size: 23px;
+  padding: 20px;
+  color: #fffdfd;
+  display: block;
+
+}
+
+header .navbar ul li a:hover{
+  background:#a3a7ab;
+  color: #ffffff;
+}
+
+header .navbar ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background:#003F91;
+
+  /* dito nagtago */
+  display: none;
+}
+
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,.1);
+  
+}
+
+header .navbar ul li ul li ul{
+  left: 200px;
+  top: 0;
+}
+
+header .navbar ul li ul li #ul{
+  left: -200px;
+  top: 0px;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+
+
+    
+    .body-container{
+        position: relative;
+        margin: 0 4rem;
+  
+    }
+ 
+    .body{
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    
+    }
+    .body #container1{
+        margin-bottom: 7rem;
+    }
+    .body h2{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: #0b0a0a;
+    margin-left: 2rem;
+
+    }
+
+    .body .container{
+     display: flex;
+    }
+    
+    .body .container p{
+        font-size: 1.7rem;
+        line-height: 3rem;
+        color: #171616;
+        text-align: justify;
+        margin:2.5rem 2rem 0 4rem ;
+         padding: 0 2rem;
+    }
+    
+    .body .container img{
+      box-shadow: 10px 10px 5px 2px rgba(69, 68, 68, 0.75);
+        background-color: rgb(127, 120, 120);
+        border-radius: .7rem;
+        margin-right: 3rem;
+        margin-left: 2rem;
+        margin-top: 5rem;
+    }
+
+    .body-container .body .container .p3{
+      margin-top: 6.5rem;
+    }
+    .body-container .body .container .p2{
+      margin-top: 4.5rem;
+    }
+
+    .body-container .body{
+      margin-bottom: 3rem;
+    }
+
+    .body #container1 ol {
+         font-size:  1.5rem;
+         line-height: 3rem;
+         color: #191717;
+         text-align: justify;
+          padding: 0 2rem;
+          margin:2.5rem 2rem 0 4rem ;
+     }
+     
+    .major{
+        margin: 0 0 1rem 5rem;
+        font-size: 2rem;
+        color: #1f1d1d;
+    }
+.body-container{
+  position: relative;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+}
+      
+  .body-container .next {
+      position: absolute;
+      bottom:-8rem;
+      right:12rem;
+      background-color: rgb(58, 69, 101);
+      border-radius: .5rem;
+      margin-top: .7rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+
+  
+  .body-container .next p{
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight:450;
+      text
+  }
+  .body-container .next a  {
+      text-decoration:none;
+      color: rgb(252, 252, 252);
+    }
+
+   
+  .body-container .next:hover{
+    
+      transform: scale(1.1);
+      background-color: rgb(114, 122, 148);
+    
+  }
+  
+  .body-container .next a:hover{
+      color: #1f1d1d;
+  }
+      
+  
+.summary{
+  color:#252323d6;
+  margin: 4rem;
+  background-color: rgb(169, 169, 169);
+  border-radius: 2rem;
+  box-shadow: 10px 10px 5px 0px rgb(11, 11, 11);
+}
+.summary h3{
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+.summary p{
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+   margin-right: 4rem;
+   margin-left: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+/* footer  */
+
+.footer-container,.text{
+  background-color:#003F91;
+
+  color: #fff;
+}
+.footer-container{
+padding: 50px 0;
+font-size: 26px;
+
+
+}
+
+ .text{
+    padding: 20px 0;
+    font-size: 14px;
+    }
+
+  .footer-container .f-container{
+  display: flex;
+ 
+  }
+
+  .footer-container .f-container .footer div .parag{
+margin-right: 3rem;
+margin-left: 3rem;
+line-height: 2.5rem;
+  }
+  .footer-container .f-container #footer1{
+    margin-left:2rem;
+
+  }
+
+  .footer-container .f-container #footer3,  .footer-container .f-container #footer4{
+    margin-top: 2rem;
+    padding: 1.7rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+     text-align: justify;
+      }
+      .footer-container .f-container #footer1 p a, .footer-container .f-container #footer3 p a,  .footer-container .f-container #footer4 p a{
+    color: white;
+      }
+       
+.footer-container .f-container #footer3 p a:hover,  .footer-container .f-container #footer4 p a:hover{
+color:black;
+ }
+
+
+ .footer-container .f-container #footer4{
+    margin-right: 6rem;
+ }
+ 
+  p {
+    margin-bottom: 20px;
+    font-size:1.3rem;
+    text-align: justify;
+  }

@@ -1,0 +1,346 @@
+﻿*{
+margin: 0; padding: 0;
+box-sizing: border-box;
+/* font-family: 'Exo 2', sans-serif; */
+font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+text-decoration: none;
+
+}
+
+
+
+body{
+background: url(digestivebg.jpg) no-repeat center center fixed; 
+background-size: cover;
+color: rgba(255, 255, 255, 0.89);
+}
+
+
+/* header */
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color:#003F91;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 10px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+
+
+header a img{
+    background-color: #ffffff;
+    border-radius: .5rem;
+   
+   }
+   
+
+header .navbar ul{
+    list-style: none;
+    
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+    
+}
+
+header .navbar ul li a{
+    font-size: 23px;
+    padding: 20px;
+    color: #fffdfd;
+    display: block;
+  
+}
+
+header .navbar ul li a:hover{
+    background:#a3a7ab;
+    color: #ffffff;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background:#003F91;
+
+    /* dito nagtago */
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+    
+}
+
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li ul li #ul{
+    left: -200px;
+    top: 0px;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+.intro-container {
+    display: flex;
+    color: rgba(255, 255, 255, 0.955);
+}
+
+.intro{
+text-align:justify;
+font-size:1.7rem;
+margin-top: 2rem;
+padding-right: 3rem;
+line-height: 2.9rem;
+color: rgba(255, 255, 255, 0.808);
+}
+
+.contents .intro-container img{
+    margin-right: 3rem;
+    border-radius: .3rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.contents{
+    padding: 2rem;
+    color: rgba(255, 255, 255, 0.842);
+}
+.contents h1{
+
+    text-transform: uppercase;
+}
+.contents, .body{
+margin: 3rem 0 2rem 5rem;
+}
+
+
+.contents .lesson{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    
+}
+
+.contents .quarter{
+    margin-top: 1.5rem;
+    padding: 2rem;
+}
+.body{
+    margin-bottom: 5rem;
+   margin-right: 5rem;
+   margin-left: 5rem;
+}
+.body h2{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #fffefed2;
+
+}
+
+.body .container{
+ display: flex;
+}
+
+.body .container p{
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: #ffffffcc;
+    text-align: justify;
+    margin-right: 2rem;
+    margin-top: 1rem;
+
+}
+.body .container img{
+
+  
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: rgb(127, 120, 120);
+    border-radius: .3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+.major{
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #ffffffe6;
+
+}
+
+.box-container {
+    display:flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+
+}
+
+.box-container .box {
+    border: 1px solid black;
+    margin: 2rem;
+     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+     border-radius: .3rem;
+     margin-bottom: 7rem;
+}
+.box-container .box img{
+ width: 100%;
+ height: 200px;
+ background-color: rgb(221, 221, 221);
+ box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.75);
+
+
+ 
+}
+
+
+.box-container .box p{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+
+}
+.box-container .box .definition{
+    text-align: justify;
+ padding-left: 6rem;
+ padding-right: 6rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.882);
+}
+
+
+.box-container{
+    
+    position: relative;
+}
+    
+.box-container .next {
+    position: absolute;
+    bottom:1rem;
+    right:10rem;
+    background-color: rgb(58, 69, 101);
+    border-radius: 1rem;
+    margin-top: .7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.box-container .next p{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight:450;
+}
+.box-container .next a{
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+   
+}
+.box-container .next:hover{
+  
+    transform: scale(1.1);
+    background-color: rgb(114, 122, 148);
+  
+}
+
+.box-container .next a:hover{
+    color: #1f1d1d;
+}
+   
+.summary{
+    color:#aeaeae;
+    margin: 4rem;
+    background-color: rgb(58, 69, 101);
+    border-radius: 2rem;
+    box-shadow: 10px 10px 5px 0px rgb(11, 11, 11);
+}
+.summary h3{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    padding-top: 2rem;
+}
+.summary p{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+     margin-right: 4rem;
+     margin-left: 4rem;
+    padding-bottom: 4rem;
+}
+ 
+/* footer  */
+
+.footer-container,.text{
+    background-color:#003F91;
+  
+    color: #fff;
+  }
+  .footer-container{
+  padding: 50px 0;
+  font-size: 26px;
+  
+  
+  }
+  
+   .text{
+      padding: 20px 0;
+      font-size: 14px;
+      }
+  
+    .footer-container .f-container{
+    display: flex;
+   
+    }
+  
+    .footer-container .f-container .footer div .parag{
+  margin-right: 3rem;
+  margin-left: 3rem;
+  line-height: 2.5rem;
+    }
+    .footer-container .f-container #footer1{
+      margin-left:2rem;
+  
+    }
+  
+    .footer-container .f-container #footer3,  .footer-container .f-container #footer4{
+      margin-top: 2rem;
+      padding: 1.7rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+       text-align: justify;
+        }
+        .footer-container .f-container #footer1 p a, .footer-container .f-container #footer3 p a,  .footer-container .f-container #footer4 p a{
+      color: white;
+        }
+         
+  .footer-container .f-container #footer3 p a:hover,  .footer-container .f-container #footer4 p a:hover{
+  color:black;
+   }
+  
+  
+   .footer-container .f-container #footer4{
+      margin-right: 6rem;
+   }
+   
+    p {
+      margin-bottom: 20px;
+      font-size:1.3rem;
+      text-align: justify;
+    }

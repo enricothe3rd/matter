@@ -1,0 +1,237 @@
+
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body{
+    background: url(frontbg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   
+}
+
+
+
+     
+/* header */
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color:#003F91;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 10px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+
+
+header a img{
+    background-color: #ffffff;
+    border-radius: .5rem;
+   
+   }
+   
+
+header .navbar ul{
+    list-style: none;
+    
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+    
+}
+
+header .navbar ul li a{
+    font-size: 23px;
+    padding: 20px;
+    color: #fffdfd;
+    display: block;
+  
+}
+
+header .navbar ul li a:hover{
+    background:#a3a7ab;
+    color: #ffffff;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background:#003F91;
+
+    /* dito nagtago */
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+    
+}
+
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li ul li #ul{
+    left: -200px;
+    top: 0px;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+
+/* body */
+.main-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    margin-top: 9rem;
+    margin-left: 2rem;
+}
+.main-container .container {
+    display: flex;
+
+}
+
+.main-container .container .main-box {
+   margin-right: 2rem;
+   background-color: rgb(114, 101, 163);
+   border-radius: 1rem;
+   position: relative;
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   padding-bottom: .5rem;
+}
+
+.main-container .container .main-box img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.main-container .container .main-box .box p{
+    text-align: center;
+    padding: .5rem 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-size: 1.9rem;
+    border-radius: .3rem;
+}
+
+.main-container .container .main-box .box #p{
+    text-align: center;
+    padding: .2rem 1rem;
+    border: 1px solid black;
+    font-size: 1.7rem;
+    margin: .5rem 1rem;
+    border-radius: 3rem;
+}
+
+.main-container .container .main-box .box #p:hover{
+    transform: scale(1.1);
+    transition: all;
+}
+.main-container .container .main-box .title1, .main-container .container .main-box .title2,.main-container .container .main-box .title3,.main-container .container .main-box .title4{
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.main-container .container .main-box .title1{
+    top: 1rem;
+    left: 2rem;
+}
+
+.main-container .container .main-box .title2{
+    top: 1rem;
+    left: 2rem;
+}
+
+.main-container .container .main-box .title3{
+    top: 1rem;
+    left: 2rem;
+}
+.main-container .container .main-box .title4{
+    top: 1rem;
+    left: 2rem;
+}
+
+
+/* footer  */
+
+.footer-container,.text{
+    background-color:#003F91;
+  
+    color: #fff;
+  }
+  .footer-container{
+  padding: 50px 0;
+  font-size: 26px;
+  
+  
+  }
+  
+   .text{
+      padding: 20px 0;
+      font-size: 14px;
+      }
+  
+    .footer-container .f-container{
+    display: flex;
+   
+    }
+  
+    .footer-container .f-container .footer div .parag{
+  margin-right: 3rem;
+  margin-left: 3rem;
+  line-height: 2.5rem;
+    }
+    .footer-container .f-container #footer1{
+      margin-left:2rem;
+  
+    }
+  
+    .footer-container .f-container #footer3,  .footer-container .f-container #footer4{
+      margin-top: 2rem;
+      padding: 1.7rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+       text-align: justify;
+        }
+        .footer-container .f-container #footer1 p a, .footer-container .f-container #footer3 p a,  .footer-container .f-container #footer4 p a{
+      color: white;
+        }
+         
+  .footer-container .f-container #footer3 p a:hover,  .footer-container .f-container #footer4 p a:hover{
+  color:black;
+   }
+  
+  
+   .footer-container .f-container #footer4{
+      margin-right: 6rem;
+   }
+   
+    p {
+      margin-bottom: 20px;
+      font-size:1.3rem;
+      text-align: justify;
+    }

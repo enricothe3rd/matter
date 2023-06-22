@@ -1,0 +1,296 @@
+*{
+
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-decoration: none;
+    
+    }
+    body{
+        background-image: url(storm.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 70% 0;
+        color: rgba(255, 255, 255, 0.829);
+    }
+
+    
+/* header */
+
+header{
+   position: fixed;
+   top: 0; left: 0; right: 0;
+   background-color:#003F91;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   padding: 10px 7%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 1000;
+   
+}
+
+
+header a img{
+   background-color: #ffffff;
+   border-radius: .5rem;
+  
+  }
+  
+
+header .navbar ul{
+   list-style: none;
+   
+}
+
+header .navbar ul li{
+   position: relative;
+   float: left;
+   
+}
+
+header .navbar ul li a{
+   font-size: 23px;
+   padding: 20px;
+   color: #fffdfd;
+   display: block;
+ 
+}
+
+header .navbar ul li a:hover{
+   background:#a3a7ab;
+   color: #ffffff;
+}
+
+header .navbar ul li ul{
+   position: absolute;
+   left: 0;
+   width: 200px;
+   background:#003F91;
+
+   /* dito nagtago */
+   display: none;
+}
+
+header .navbar ul li ul li{
+   width: 100%;
+   border-top: 1px solid rgba(0,0,0,.1);
+   
+}
+
+header .navbar ul li ul li ul{
+   left: 200px;
+   top: 0;
+}
+
+header .navbar ul li ul li #ul{
+   left: -200px;
+   top: 0px;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+   display: initial;
+}
+/* body part */
+.intro{
+    margin: 4rem;
+}
+.intro .h1{
+margin-top: 12rem;
+margin-bottom: 4rem;
+}
+ .intro h1{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+ }
+ 
+ .intro p{
+    margin-top: 2rem;
+    text-align: justify;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+ }
+ .main-container{
+    margin-bottom: 4rem;
+ }
+ .main-container .container{
+    margin-right: 8rem;
+    margin-left: 8rem;
+ }
+ .main-container .container .box{
+    display: flex;
+ }
+ .main-container .container .box .img-container {
+    margin-top: 6rem;
+ }
+ .main-container .container .box .img-container .typhoon{
+    text-transform: capitalize;
+    margin-bottom: .7rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+ }
+ .main-container .container .box .img-container:hover{
+    transform: scale(1.1);
+    transition: all;
+ }
+ .main-container .container .box img{
+    margin-right: 4rem;
+    border-radius: 1rem;
+ }
+
+ .main-container .container .box .p{
+font-size: 1.7rem;
+text-align: justify;
+margin-top: 1.8rem;
+line-height: 3.5rem;
+font-weight: 400;
+ }
+ .main-container1{
+    margin: 4rem 8rem;
+ }
+ .main-container1 .title1{
+    text-transform: capitalize;
+ }
+ .main-container1 .container1{
+    display: flex;
+ }
+ .main-container1 .container1 .p1{
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    text-align: justify;
+    margin-right: 4rem;
+    margin-top: 2rem;
+ }
+ .main-container1 .container1 .box .img-container1 .typhoon1{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-right: 2rem;
+    margin-left: 2rem;
+ }
+
+ .main-container1 .container1 .box .img-container1:hover{
+    transform: scale(1.1);
+    transition:all;
+ }
+ .main-last-container{
+    margin:0 8rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+ }
+ .main-last-container h1{
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+ }
+
+ .main-last-container .last-container{
+    display: flex;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+ }
+ 
+ .main-last-container .last-container img:hover{
+    transform: scale(1.1);
+    transition: all;
+ }
+ .main-last-container .last-container p{
+    font-size: 1.8rem;
+    margin:0 4rem;
+    margin-top: 2rem;
+ }
+ .main-last-container .last-box ol{
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    line-height: 3.4rem;
+ }
+
+ .summary{
+   color:#ffffffca;
+   margin: 4rem;
+   background-color: rgb(48, 50, 55);
+   border-radius: 2rem;
+   box-shadow: 10px 10px 5px 0px rgb(11, 11, 11);
+}
+.summary h3{
+   font-size: 2.5rem;
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   padding-top: 2rem;
+}
+.summary p{
+   font-size: 1.8rem;
+   line-height: 1.8rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+   padding-bottom: 4rem;
+}
+
+
+/* footer  */
+
+.footer-container,.text{
+   background-color:#003F91;
+ 
+   color: #fff;
+ }
+ .footer-container{
+ padding: 50px 0;
+ font-size: 26px;
+ 
+ 
+ }
+ 
+  .text{
+     padding: 20px 0;
+     font-size: 14px;
+     }
+ 
+   .footer-container .f-container{
+   display: flex;
+  
+   }
+ 
+   .footer-container .f-container .footer div .parag{
+ margin-right: 3rem;
+ margin-left: 3rem;
+ line-height: 2.5rem;
+   }
+   .footer-container .f-container #footer1{
+     margin-left:2rem;
+ 
+   }
+ 
+   .footer-container .f-container #footer3,  .footer-container .f-container #footer4{
+     margin-top: 2rem;
+     padding: 1.7rem;
+     margin-right: 2rem;
+     margin-left: 2rem;
+      text-align: justify;
+       }
+       .footer-container .f-container #footer1 p a, .footer-container .f-container #footer3 p a,  .footer-container .f-container #footer4 p a{
+     color: white;
+       }
+        
+ .footer-container .f-container #footer3 p a:hover,  .footer-container .f-container #footer4 p a:hover{
+ color:black;
+  }
+ 
+ 
+  .footer-container .f-container #footer4{
+     margin-right: 6rem;
+  }
+  
+   p {
+     margin-bottom: 20px;
+     font-size:1.3rem;
+     text-align: justify;
+   }
+   img{
+      border-radius: 1rem;
+      box-shadow: 10px 10px 5px 0px rgba(37, 35, 35, 0.75);
+   }
